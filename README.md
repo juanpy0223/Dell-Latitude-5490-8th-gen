@@ -5,7 +5,7 @@
 Tested to clean Install Mojave, Catalina, Big Sur and Monterey
 my wifi card is BCM94360ng, I havent tried any other.
 
-please add your own PLATFORM INFO, with https://github.com/corpnewt/GenSMBIOS, im using MacBookPro15,2 SMBIOS.
+please add your own PLATFORM INFO, with https://github.com/corpnewt/GenSMBIOS, im using MacBookPro15,2 SMBIOS. But you can use any SMBIOS from MBP14,1 through MBP16,1
 
 
 # Guides and sources:
