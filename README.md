@@ -1,9 +1,21 @@
 # Dell Latitude 5490 OpenCore 0.7.8
+
  Dell Latitude 5490
-Test to clean Install Mojave, Catalina, Big Sur and Monterey
-my wifi card is BCM94360ng, I havent tried any other
+
+Tested to clean Install Mojave, Catalina, Big Sur and Monterey
+my wifi card is BCM94360ng, I havent tried any other.
 
 please add your own PLATFORM INFO, with https://github.com/corpnewt/GenSMBIOS, im using MacBookPro15,2 SMBIOS.
+
+
+# Guides and sources:
+
+I followed [Dortania's OpenCore Guide](https://dortania.github.io/)
+
+Then also took some files from [franklin-gedler repo](https://github.com/franklin-gedler/Dell-Latitude-7490-OpenCore-Big-Sur)
+
+Last I followed [OC Little Translated by 5T33Z0](https://github.com/5T33Z0/OC-Little-Translated)
+
 
 # My Specs:
 
@@ -22,13 +34,13 @@ please add your own PLATFORM INFO, with https://github.com/corpnewt/GenSMBIOS, i
 
 # What works on MacOS:
 
-- Trackpad full (SSDT-GPI0.aml + AlpsHID.kext,VooDooI2C.kext,VooDooI2cHID.kext, VooDooPS2Controller.kext, NoTouchID.kext)
+- KeyBoard+Trackpad full (SSDT-GPI0.aml + AlpsHID.kext,VooDooI2C.kext,VooDooI2cHID.kext, VooDooPS2Controller.kext, NoTouchID.kext)
 
 - Graphics Full Aceleration, VGA and HDMI (Plug.aml, Lilu.kext, VirtualSMC.kext, WhateverGreen.kext)
 
 - A type USB USB Port Map kext, USB-C | DP DisplayPort - (USB Port Map kext + SSDT-EC-USBX-LAPTOP.aml + Graphic Patch)
 
-- Brightness (SSDT-PNLF.aml + BrightnessKeys.kext)
+- Brightness+Audio keys (SSDT-PNLF.aml + BrightnessKeys.kext)
 
 - Battery Read-Outs (SSDT-AC.aml, ECEnabler.kext, SMCBatteryManager.kext, ACPIBatteryManager.kext) it actually worked without any patch or kext, but battery life was very poor, I went on with patching, now it lasts 5 hours.
 
@@ -42,9 +54,15 @@ please add your own PLATFORM INFO, with https://github.com/corpnewt/GenSMBIOS, i
 
 - Audio: Speakers and Microphone (AppleAlc.kext alcid11 + HPET aml) ComboJack (PostInstall\ComboJack-fixforDell + VerbStub.kext) it fixes the audio distortion via wired headphones and aux audio. (I had to disable SIP in order to install, then enabled back).
 
-I included a file (pcidevices.aml) wich has all pci devices config needed for DeviceProperties
+# I included a file (pcidevices.aml) wich has all pci devices config needed for DeviceProperties
 
-this is a WORK IN PROGRESS, please let me know any problem you may have, or any suggestions.
+
+
+# This is a WORK IN PROGRESS, please let me know any problem you may have, or any suggestions.
+
+There are other patches for correcting sleep issues, and making macOS believe that os running on a real MacBookPro, like ALSD, DMAC, EXT3-WAKESCREEN, GPIO, GPRW, MCHC, MEM2, PCMR, PTWAKKTS, and so on.
+
+# Note: when connected to the charger it wakes up right after sleep, but if I detach charger, sleep and waking up works ok, just by closing and opening the laptop.
 
 # Before installation you must do 2 things: 1st. Bios Config, 2nd. Config Modification via GrubShell: (Credits to franklin-gedler)
 
