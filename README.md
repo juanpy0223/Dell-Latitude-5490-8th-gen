@@ -70,9 +70,13 @@ There are other patches for correcting sleep issues, and making macOS believe th
 # Bios Config:
 
 Boot mode: UEFI
+
 Fast Boot: Minimal
+
 SecureBoot = Disable
+
 SATA Mode: AHCI 
+
 Intel SGX: Software Controlled
 
 # Now we start the pendrive and select modGRUBShell.efi or OpenShell.efi (Be carefull with the commands):
