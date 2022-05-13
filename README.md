@@ -23,7 +23,7 @@ Last I followed [OC Little Translated by 5T33Z0](https://github.com/5T33Z0/OC-Li
 
 - CPU/GPU: Intel i5-8350u (5490) and i5-8250u (5590)/Intel UHD Graphics 620
 
-- DRAM: 32GB (2x16GB) 2400MHZ DDR4 RAM
+- DRAM: 32GB (2x16GB) 2400MHZ DDR4 RAM on 5590, the 5490 has 24GB (16GB+8GB)
 
 - Storage: 1TB MX500 Crucial SSD 2.5" (Files) (sata port) + 256GB WD SN520 NVME 2242 (Windows) (via wwan slot) + 1TB Crucial P5 2280 (nvme slot) (MacOS-Catalina and Big Sur)
 
@@ -43,6 +43,8 @@ Last I followed [OC Little Translated by 5T33Z0](https://github.com/5T33Z0/OC-Li
 - Brightness+Audio keys (SSDT-PNLF.aml + BrightnessKeys.kext)
 
 - Battery Read-Outs (SSDT-AC.aml, ECEnabler.kext, SMCBatteryManager.kext, ACPIBatteryManager.kext) it actually worked without any patch or kext, but battery life was very poor, I went on with patching, now it lasts 5 hours.
+
+- TouchSreen also works on Catalina, Big Sur and Monterrey, only remapped USB ports and boom, like a charm.
 
 - Power Management (SSDT-EC-USBX-LAPTOP.aml, SSDT-HPET.aml, SSDT-PLUG.aml, CPUFriend+CPUFriendDataProvider kexts)
 
