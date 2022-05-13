@@ -1,6 +1,6 @@
-# Dell Latitude 5490 OpenCore 0.7.8
+# Dell Latitude 5490 and 5590 OpenCore 0.7.8
 
- Dell Latitude 5490
+ Dell Latitude 5490 and 5590
 
 Tested to clean Install Mojave, Catalina, Big Sir, and Monterey
 my wifi card is BCM94360ng, I havent tried any other.
@@ -23,11 +23,11 @@ Last I followed [OC Little Translated by 5T33Z0](https://github.com/5T33Z0/OC-Li
 
 - CPU/GPU: Intel i5-8350u/Intel UHD Graphics 620
 
-- DRAM: 24GB (16GB+8GB) 2400MHZ DDR4 RAM
+- DRAM: 32GB (2x16GB) 2400MHZ DDR4 RAM
 
-- Storage: 1TB MX500 Crucial SSD 2.5" (Files) (sata port) + 256GB WD SN520 NVME 2242 (Windows) (via wwan slot) + 1TB WD SN530 2280 (nvme slot) (MacOS-Catalina and Big Sur)
+- Storage: 1TB MX500 Crucial SSD 2.5" (Files) (sata port) + 256GB WD SN520 NVME 2242 (Windows) (via wwan slot) + 1TB Crucial P5 2280 (nvme slot) (MacOS-Catalina and Big Sur)
 
-- Connections: BCM94360ng BT+Wifi card - I219-LM Intel Ethernet
+- Connections: BCM94360ng (5490) BT+Wifi card - I219-LM Intel Ethernet; Intel 8265ngw (5590)
 
 - 3x USB 3.1 Gen1 (one with PowerShare) - DisplayPort over USB Type-C(optional Thunderbolt 3(1)
 
@@ -46,7 +46,7 @@ Last I followed [OC Little Translated by 5T33Z0](https://github.com/5T33Z0/OC-Li
 
 - Power Management (SSDT-EC-USBX-LAPTOP.aml, SSDT-HPET.aml, SSDT-PLUG.aml, CPUFriend+CPUFriendDataProvider kexts)
 
-- Wifi + Bluetooth no kext needed
+- Wifi + Bluetooth no kext needed for BCM94360NG and AirportItlwm.kext for Intel Wifi
 
 - Conexion LAN (IntelMausi.kext)
 
