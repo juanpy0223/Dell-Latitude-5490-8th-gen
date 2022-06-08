@@ -1,4 +1,4 @@
-# Dell Latitude 5490 and 5590 OpenCore 0.7.8
+# Dell Latitude 5490 and 5590 OpenCore 0.8.1
 
  Dell Latitude 5490 and 5590
 
@@ -25,7 +25,7 @@ Last I followed [OC Little Translated by 5T33Z0](https://github.com/5T33Z0/OC-Li
 
 - DRAM: 32GB (2x16GB) 2400MHZ DDR4 RAM on 5590, the 5490 has 24GB (16GB+8GB)
 
-- Storage: 1TB MX500 Crucial SSD 2.5" (Files) (sata port) + 256GB WD SN520 NVME 2242 (Windows) (via wwan slot) + 1TB Crucial P5 2280 (nvme slot) (MacOS-Catalina and Big Sur)
+- Storage: 1TB MX500 Crucial SSD 2.5" (Files) (sata port) + 256GB WD SN520 NVME 2242 (Windows) (via wwan slot) + 1TB Crucial P5 2280 (nvme slot) (MacOS-Catalina, Big Sur and Monterey)
 
 - Connections: BCM94360ng/Intel 8265ngw BT+Wifi card - I219-LM Intel Ethernet
 
@@ -117,11 +117,14 @@ VT-d = Disable
     
     After this we can reboot and then install.
     
-    # Battery Life History:
+    
+    
+# Battery Life History:
     
 Lenovo X220t, T440s, t450s, E570 - High Sierra, Mojave, Catalina and Big Sur - 1 hour to 1.5 hours
 
 Dell Latitude 5490/5590 - Catalina, Big Sur and Monterey - 2 to 2.5 hours
+
 
 # I took my time with the Dell Latitude 15 5590:
 
