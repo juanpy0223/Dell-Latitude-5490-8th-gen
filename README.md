@@ -146,6 +146,6 @@ Also Monterey gave me more battery options:
 - "Optimize battery charging"
 - "Low power mode"
 
-Also a Dell Technician told me, that Dell Laptops board internal drivers, play better with Kingston and Crucial RAM and with Crucial NVME and SATA SSDs, so I install 2x16gb 2400mhz DDR4 sodimm RAM modules, 1x1tb mx500 crucial sata ssd and 1tb P5 crucial nvme (Crucial advertises 40% less power consumtion).
+Also a Dell Technician told me, that Dell Laptops board internal drivers, play better with Kingston and Crucial RAM and with Crucial NVME and SATA SSDs, so I install 2x16gb Crucial 2400mhz DDR4 sodimm RAM modules, 1x1tb mx500 crucial sata ssd and 1tb P5 crucial nvme (Crucial advertises 40% less power consumtion).
 
 I hope this information helps.... if you have the same model...
