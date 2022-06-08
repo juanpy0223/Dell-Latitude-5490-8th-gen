@@ -19,7 +19,7 @@ Last I followed [OC Little Translated by 5T33Z0](https://github.com/5T33Z0/OC-Li
 
 # My Specs:
 
-- Model Make: Dell Latitude 5490
+- Model Make: Dell Latitude 5490/5590
 
 - CPU/GPU: Intel i5-8350u (5490) and i5-8250u (5590)/Intel UHD Graphics 620
 
