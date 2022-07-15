@@ -44,6 +44,8 @@ Last I followed [OC Little Translated by 5T33Z0](https://github.com/5T33Z0/OC-Li
 
 - Battery Read-Outs (SSDT-AC.aml, ECEnabler.kext, SMCBatteryManager.kext, ACPIBatteryManager.kext) it actually worked without any patch or kext, but battery life was very poor, I went on with patching, now it lasts 5 hours.
 
+# Edit: I realised that mds_stores (aka SpotLight) indexing was using too much CPU thus using too much power, making it hot and draining the battery... solution: in terminal, type: "sudo mdutil -a -i off" to disable indexing... now is running cool 43 to 45 degrees; the fan now is off, must of the time!!!!
+
 - TouchSreen also works on Catalina, Big Sur and Monterrey, only remapped USB ports and boom, like a charm.
 
 - Power Management (SSDT-EC-USBX-LAPTOP.aml, SSDT-HPET.aml, SSDT-PLUG.aml, CPUFriend+CPUFriendDataProvider kexts)
